@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+    </style>
+</head>
+<body>
+    <script>
+        console.log("--------문제1------");
+        for(var i = 1; i<6; i++) {
+              var txt = "";
+            for(var j = 0; j<i; j++) {
+              txt += "*";
+            }
+            console.log(txt);
+        }
+
+        console.log("--------문제2------");
+        for(var i = 0; i<5 ; i++) {
+            var txt = "";
+            for(var j = 0; j<5-i; j++) {
+                txt += "*";
+            }
+            console.log(txt);
+
+        }
+
+        console.log("--------문제3------");
+        for(var i = 1; i<6; i++) {
+            var txt = " ";
+            for(var j = 0; j<i; j++) {
+                txt += "*";
+            }
+            for(var j = 0; j<6-i; j++){
+                txt += "#"
+            }
+            console.log(txt);
+        }
+
+        console.log("--------문제4------");
+        for(var i = 1; i<6; i++) {
+            var txt = " ";
+            for(var j = 0; j<i; j++) {
+                txt += "#";
+            }
+            for(var j = 0; j<6-i; j++){
+                txt += "*"
+            }
+            console.log(txt);
+        }
+
+        console.log("--------문제5------");
+        for(var i = 1; i<6; i++) {
+            var txt = " ";
+            for(var j = 1; j<i; j++) {
+                txt += " ";
+            }
+            for(var j = 0; j<6-i; j++){
+                txt += "*"
+            }
+            console.log(txt);
+        }
+
+        console.log("--------문제6------");
+        for(var i = 1; i<6; i++) {
+            var txt = " ";
+            for(var j = 0; j<6-i; j++) {
+                txt += " ";
+            }
+            for(var j = 0; j<i; j++){
+                txt += "*"
+            }
+            console.log(txt);
+        }
+
+        console.log("--------문제7------");
+        for(var i = 0; i<5; i++){
+            var txt = " ";
+            for(var j = 0; j<5; j++){
+            txt += i+j;
+            }
+            console.log(txt);
+ 
+        }
+
+        console.log("-------문제8--------");
+        for(var i = 1; i<6; i++){
+            var txt = "";
+        for(var j = 0; j<i; j++){
+            txt += j;
+        }
+        console.log(txt);
+
+        }
+
+        console.log("-------문제9---------");
+        var k = 0;
+        for(var i = 0; i<5; i++){
+            var txt ="";
+        for(var j = 0; j<=i; j++){
+            txt += (k % 10);
+            k++;
+        }
+        console.log(txt);
+        }
+    </script>
+</body>
+</html>

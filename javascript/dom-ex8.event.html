@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        #head4 {
+            color: crimson;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="head1" onclick="console.log('hello');">Lorem.</h1>
+    <h1 onclick="show();" id="head2">Lorem, ipsum.</h1>
+    <h1 id="head3">Lorem, ipsum dolor.</h1>
+    <h1 id="head4">Lorem, ipsum.</h1>
+
+    <script>
+        var h4 = document.getElementById("head4");
+        h4.addEventListener("click",show);
+        
+
+        var h3 = document.getElementById("head3");
+        h3.onclick = show;
+        h3.style.backgroundColor="red";
+
+        function show() {
+            for(var i = 0; i < 3; i++){
+                console.log(i);
+            }
+        }
+    </script>
+</body>
+</html>

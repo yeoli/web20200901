@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <style>
+    </style>
+</head>
+<body>
+    <input id = "input1" type="text"><br>
+    <input id = "input2" type="text"><br>
+    <button onclick="displayAdd()"><i class="fas fa-plus"></i></button>
+    <button onclick="displaySub()"><i class="fas fa-minus"></i></button>
+    <button onclick="displayDiv()"><i class="fas fa-divide"></i></button>
+    <button onclick="displayMul()"><i class="fas fa-times"></i></button>
+    <p id="result1"></p>
+    <script>
+
+
+        function displayAdd() {
+            var n1 = document.getElementById("input1").value;
+            var n2 = document.getElementById("input2").value;
+
+            var result = add(Number(n1), Number(n2));
+            document.getElementById("result1").innerHTML = result;
+
+        }
+
+        function add(a, b) {
+            return a + b;
+        }
+
+        function displaySub() {
+            var n1 = document.getElementById("input1").value;
+            var n2 = document.getElementById("input2").value;
+
+            var result = Sub(Number(n1), Number(n2));
+            document.getElementById("result1").innerHTML = result;
+
+        }
+
+        function Sub(a, b) {
+            return a - b;
+        }
+
+        function displayMul() {
+            var n1 = document.getElementById("input1").value;
+            var n2 = document.getElementById("input2").value;
+
+            var result = Mul(Number(n1), Number(n2));
+            document.getElementById("result1").innerHTML = result;
+
+        }
+
+        function Mul(a, b) {
+            return a * b;
+        }
+        
+        function displayDiv() {
+            var n1 = document.getElementById("input1").value;
+            var n2 = document.getElementById("input2").value;
+
+            var result = Div(Number(n1), Number(n2));
+            document.getElementById("result1").innerHTML = result;
+
+        }
+
+        function Div(a, b) {
+            return a / b;
+        }
+        
+    </script>
+</body>
+</html>

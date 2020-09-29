@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <style>
+    </style>
+</head>
+<body>
+    <button onclick="rpsGame(1)"><i class = "fas fa-hand-rock"></i></button>
+    <button onclick="rpsGame(2)"><i class = "fas fa-hand-paper"></i></button>
+    <button onclick="rpsGame(3)"><i class = "fas fa-hand-scissors"></i></button>
+    <br>
+
+    <img src="" alt="" id="computer"><br>
+
+    <p id="result"></p>
+
+    <script>
+        function rpsGame(user) {
+            var r = Math.floor(Math.random()*3)+1
+            var fileName = "rps" + r + ".png";
+            document.getElementById("computer").src = fileName;
+   
+            if((user == "3") && (r == "1")){
+                document.getElementById("result").innerHTML = "비겼습니다"
+                }
+            else if((user == "2") && (r == "2")){ 
+                document.getElementById("result").innerHTML = "비겼습니다"
+            }
+            else if((user == "1") && (r == "3")){
+                document.getElementById("result").innerHTML = "비겼습니다"
+            }
+            else if((user == "2") && (r == "3")){
+                document.getElementById("result").innerHTML = "이겼습니다"
+            }
+            else if((user == "1") && (r == "1")){
+                document.getElementById("result").innerHTML = "이겼습니다"
+            }
+            else if((user == "3") && (r == "2")){
+                document.getElementById("result").innerHTML = "이겼습니다"
+            }
+            else{
+                document.getElementById("result").innerHTML = "졌습니다"
+            }
+            
+        }
+
+    </script>
+</body>
+</html>

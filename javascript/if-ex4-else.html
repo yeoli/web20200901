@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+    </style>
+</head>
+<body>
+    <input type="text" id="input1">
+    <br>
+    <button onclick="vote()">투표 가능?</button>
+    <p id="result"></p>
+    <script>
+    function vote() {
+        var age = document.getElementById("input1").value;
+        age = Number(age);
+
+        if(age>= 18 && age<99){
+            document.getElementById("result").innerHTML = "투표 가능"
+        } else {
+            document.getElementById("result").innerHTML = "투표 불가능"
+        }
+    }
+    </script>
+</body>
+</html>

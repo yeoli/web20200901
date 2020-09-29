@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .container{
+            display: flex;
+            height: 300px;
+            justify-content: space-between;
+            display: flex;
+
+        
+        }
+
+        #div1{
+            background-color: red;
+            width: 500px;
+        }
+
+        #div2{
+            background-color: darkblue;
+            width: 200px;
+            z-index: -2;
+            transform: scale(3);
+        }
+
+        #div3{
+            background-color: darkgreen;
+        }
+
+        #div4{
+            background-color:fuchsia;
+        }
+
+        #div5{
+            background-color: gold;
+        }
+</head>
+    </style>
+<body>
+    <div class="container">
+        <div id="div2">2</div>
+        <div id="div1">1</div>
+        <div id="div3">3</div>
+        <div id="div4">4</div>
+        <div id="div5">5</div>
+    </div>
+</body>
+</html>

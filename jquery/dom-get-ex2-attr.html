@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+    </style>
+    <script>
+        $(document).ready(function() {
+            var l1= $("#link1").attr("aria-valuemax");
+            console.log(l1);
+            console.log($("#link2").attr("href"));
+            console.log($("#link3").attr("href"));
+
+
+        });
+    </script>
+</head>
+<body>
+    <a href="https://www.daum.net" aria-valuemax="2px" id="link1">daum</a>
+    <a href="https://www.naver.com" id="link2">naver</a>
+    <a href="https:www.google.com" id="link3">google</a>
+</body>
+</html>

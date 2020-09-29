@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+    </style>
+    <script>
+        $(document).ready(function() {
+           var t = $("#head1").text();
+           var s = $("#head2").html();
+
+           console.log(t);
+           console.log(s);
+
+           var v = $("#input1").val();
+           console.log(v);
+
+           $("#input1").keyup(function() {
+               var val = $(this).val();
+               console.log(val);
+           })
+        });
+    </script>
+</head>
+<body>
+    <h1 id="head1">Lorem, <span>adfdfdfdfdddd</span> dolor.</h1>
+    <h1 id="head2">Ducimus, <span>adflkjeia;kdjfie</span> consectetur?</h1>
+    <h1 id="head3">Molestiae, accusantium adipisci.</h1>
+
+    <input type="text" id="input1" value="ase">
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+    </style>
+</head>
+<body>
+    <form action="" id="form1">
+        <input type="text" id="input1">
+    </form>
+    <form action="" id="form2">
+        <input type="text" id="input2">
+    </form>
+
+    <script>
+        console.log(document.forms.form1);
+        console.log(document.forms.form2.innerHTML);
+
+        console.log(document.forms["form1"]);
+        console.log(document.forms["form2"].innerHTML);
+
+        var obj = {name:"john", age:50};
+        console.log(obj.name);
+        console.log(obj["name"]);
+    </script>
+</body>
+</html>

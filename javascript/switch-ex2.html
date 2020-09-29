@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+    </style>
+</head>
+<body>
+    <select name="" id="grade" onchange="show();">
+        <option value="a">A등급</option>
+        <option value="b">B등급</option>
+        <option value="c">C등급</option>
+    </select>
+    <p id="result"></p>
+    <script>
+        function show() {
+            var grade = document.getElementById("grade").value;
+            var txt;
+
+            switch(grade) {
+                case "a" :
+                txt = "90점이상입니다."
+                break;
+                case "b" :
+                txt = "80점이상입니다."
+                break;
+                case "c" :
+                txt = "70점이상입니다."
+                break;
+                default : txt = "등급오류"
+ 
+            }
+
+            document.getElementById("result").innerHTML = txt;
+        }
+    </script>
+</body>
+</html>

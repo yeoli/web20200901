@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+    </style>
+</head>
+<body>
+    <input type="number" id="input1">
+    <button onclick="show()">구구단</button>
+    <div id="result"></div>
+    <script>
+       
+        function show(){
+        var txt ="";
+        var aa = document.getElementById("input1").value;
+        aa = Number(aa);
+
+        for(var i = 1; i <= 9; i++) {
+           
+            txt += aa + "&times;" + i + " = " + (aa*i) + "<br>";
+
+         }
+         document.getElementById("result").innerHTML = txt;
+        }
+    </script>
+</body>
+</html>

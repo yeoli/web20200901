@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+        .dark {
+            background-color: darkgreen;
+            color: white;
+        }
+
+
+    </style>
+    <script>
+        $(document).ready(function() {
+            $("#btn1").click(function() {
+                $("div").toggleClass("dark");
+            });
+
+            // $("div").click(function() {
+            //     $(this).remove();
+            // });
+        });
+    </script>
+</head>
+<body>
+    <button id="btn1"><i class="fas fa-adjust"></i></button>
+
+    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex exercitationem, corporis explicabo reiciendis praesentium facilis ullam adipisci similique. Labore expedita deserunt iusto dolorem repellat cupiditate fuga eveniet amet, rem distinctio.</div>
+</body>
+</html>

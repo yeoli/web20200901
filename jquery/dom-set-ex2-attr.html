@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+    </style>
+    <script>
+        $(document).ready(function() {
+           // $("#link1").click(function() {
+                //$("#link1").attr("href","https://www.google.com");
+
+                //var t = $("#input1").val();
+                //$("#link1").attr("href", t);
+
+
+                $("#input1").keyup(function() {
+                $("#link1").attr("href", $("#input1").val()); //input에 this라고 써도 됨
+                
+            });            
+        });
+    </script>
+</head>
+<body>
+    <input type="text" id="input1">
+    <br>
+    <a href="" id="link1">custom</a>
+</body>
+</html>

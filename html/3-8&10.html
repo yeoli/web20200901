@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <form>
+            <fieldset>
+                <legend>신상정보</legend>
+                1.이름 <input type="text" placeholder="이름" ><br>
+                2.이메일 <input type="email" placeholder="이메일"><br>
+                3.휴대폰 번호 <input type="number">
+            </fieldset>
+        </form>
+
+        <form>
+            <fieldset>
+                <legend>카드 정보 입력</legend>
+                  <fieldset>
+                      <legend>카드 타입</legend>
+                      1. <input type="radio" name="cardd">visa<br>
+                      2. <input type="radio" name="cardd" checked>AmEx<br>
+                      3. <input type="radio" name="cardd">Mastercard<br>
+                  </fieldset>
+                  2. 카드 번호 <input type="number" max="3" min="1" step="1"><br>
+                  3. CRC 번호 <input type="number" max="999" min="444" step="1"><br>
+                  4. 카드 소유자 이름 <input type="text" placeholder="카드 상의 이름">
+            </fieldset>
+            <fieldset>
+                <input type="submit" name="구매">
+            </fieldset>
+        </form>
+    </body>
+</html>

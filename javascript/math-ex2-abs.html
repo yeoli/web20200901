@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+    </style>
+</head>
+<body>
+    <input type="number" id="input1"><br>
+    <input type="number" id="input2"><br>
+    <button onclick="showDiff()">두 값의 차이</button>
+    <p id="result"></p>
+    <script>
+        function showDiff() {
+            var a = document.getElementById("input1").value;
+            var b = document.getElementById("input2").value;
+            // a = Number(a);
+            // b = Number(b);
+            var sd = Math.abs(a-b);
+            document.getElementById("result").innerHTML = sd;
+        }
+
+    </script>
+</body>
+</html>

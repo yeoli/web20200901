@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+        div {
+            background-color: aquamarine;
+        }
+    </style>
+    <script>
+        $(document).ready(function() {
+            var dd = $("#div1").css("background-color");
+            console.log(dd);
+
+            $("#div1").css("color","blue");
+            $("#div1").css({
+                fontSize : "40px",
+                fontWeight: "bold",
+                textDecoration : "underline"
+                
+            });
+        });
+    </script>
+</head>
+<body>
+    <div id="div1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error quaerat laborum alias ratione dolores consequuntur, omnis possimus molestiae maiores quasi cum ex quos animi velit totam nisi veritatis rerum assumenda.</div>
+</body>
+</html>

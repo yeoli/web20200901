@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        function changeColor(c) {
+            document.getElementById("bcolo").style.backgroundColor = c;
+        }
+    </script>
+    <style>
+    </style>
+    <script>
+        $(document).ready(function() {
+        });
+    </script>
+</head>
+<body id="bcolo">
+  <input type="radio" onclick="changeColor('blue')" >파랑색
+  <input type="radio" onclick="changeColor('green')">초록색
+</body>
+</html>

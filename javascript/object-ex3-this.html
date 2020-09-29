@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+    </style>
+</head>
+<body>
+    <script>
+        var car = {
+            name: "kia",
+            color: "black",
+            description: function() { 
+                 console.log(this.name + "," + this.color);
+            }
+        }
+        car.description();
+        car.color = "white";
+        car.description();
+
+    </script>
+</body>
+</html>

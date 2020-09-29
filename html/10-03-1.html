@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        function get() {
+            var val = document.getElementById("ex").innerHTML;
+            alert(val);
+        }
+
+        function set(v) {
+            document.getElementById("ex").innerHTML = v;
+        }
+    </script>
+    <style>
+    </style>
+</head>
+<body>
+    <div id="ex">여기가 div로 선언되었습니다.</div>
+    <a href="#" onclick="get()">div 요소 내용 출력하기</a><br>
+    <a href="#" onclick="set('변경되었습니다.')">div 요소 내용 변경하기</a>
+    <script>
+    </script>
+</body>
+</html>

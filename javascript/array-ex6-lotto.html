@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+    </style>
+</head>
+<body>
+    <button onclick="lotto()">로또 번호</button>
+    <div id="result"></div>
+    <script>
+        function lotto() {
+            var numbers = [];
+
+            while(numbers.length<6){
+                var newNumber = Math.floor(Math.random()*45)+1;
+                if(!numbers.includes(newNumber)){
+                    numbers.push(newNumber);
+                }
+                //numbers.push(Math.floor(Math.random()*45)+1);
+            }
+
+            var txt = "";
+            for(var i = 0; i<numbers.length;i++) {
+                txt += "<div>" + numbers[i] + "</div>";
+            }
+
+            document.getElementById("result").innerHTML = txt;
+        }
+    </script>
+</body>
+</html>

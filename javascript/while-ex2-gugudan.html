@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+    </style>
+</head>
+<body>
+    <input type="number" onkeyup="show()" id="input1">
+    <div id="result"></div>
+    <script>
+        function show() {
+            var num = document.getElementById("input1").value;
+            num = Number(num);
+
+            var txt=""
+            var i = 1;
+
+            while(i<=9){
+                txt += num +"&times"+ i + "=" + num*i + "<br>";
+                i++;
+            }
+
+            document.getElementById("result").innerHTML = txt;
+        }
+
+        //for-ex4-gugudan 참조
+    
+    </script>
+</body>
+</html>
